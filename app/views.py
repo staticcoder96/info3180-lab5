@@ -57,7 +57,7 @@ def load_user(id):
 @app.route("/secure-page")
 @login_required
 def secure_page():
-    return redirect(url_for("login"))
+    return render_template('secure_page.html')
     
 @app.route("/logout")
 @login_required
